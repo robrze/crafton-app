@@ -1,0 +1,62 @@
+@import "../../assets/fonts/Muli/multi-fonts.scss";
+@import "../../assets/styles/colors.scss";
+
+.central-view {
+  padding: 215px 200px;
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    margin: 0;
+    height: 72px;
+    font-size: 36px;
+    line-height: 60px;
+    color: $navy-blue;
+    font-family: "Multi";
+    font-weight: 800;
+  }
+
+  &__link {
+    color: $blue;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__description {
+    margin-right: 88px;
+    line-height: 32px;
+    font-size: 18px;
+    width: 600px;
+  }
+
+  &__requirement-row {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+
+  &__requirement-text {
+    margin-bottom: 10px;
+  }
+
+  &__arrow {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: $blue;
+  }
+
+  &__for-who-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__globe {
+    width: 492px;
+    height: 514px;
+    box-shadow: 0px 11px 35px rgba(95, 95, 95, 0.22);
+    object-position: 0;
+    object-fit: none;
+  }
+}
