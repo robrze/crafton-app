@@ -8,7 +8,6 @@
 
   &__first-section {
     display: flex;
-    flex-direction: row;
   }
 
   &__title {
@@ -32,14 +31,12 @@
     margin-right: 88px;
     line-height: 32px;
     font-size: 18px;
-    font-weight: 400;
     width: 600px;
     color: $dark-gray;
   }
 
   .requirement-row {
     display: flex;
-    flex-direction: row;
     margin: 0;
   }
 
