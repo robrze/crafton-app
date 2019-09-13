@@ -5,7 +5,7 @@ import "./central-page-view.scss";
 export const CentralPageView = () => {
   return (
     <div className="central-view">
-      <div className="central-view__for-who-section">
+      <div className="central-view__first-section">
         <div>
           <p className="central-view__title">Dla kogo?</p>
           <p className="central-view__description">
@@ -24,22 +24,14 @@ export const CentralPageView = () => {
             <span className="central-view__link">(Dz.U. 2017 poz. 1575)</span>.
             <br />
             <br />
-            <p className="central-view__requirements">
-              <p className="central-view__requirement-text">
-                Wymagane od kandydata:
-              </p>
-              <p className="central-view__requirement-row">
-                <p className="central-view__arrow"> → </p>
-                <p className="central-view__requirement-text">
-                  Ukończone studia wyższe
-                </p>
-              </p>
-              <p className="central-view__requirement-row">
-                <p className="central-view__arrow"> → </p>
-                <p className="central-view__requirement-text">
-                  Przygotowanie pedagogiczne
-                </p>
-              </p>
+            <p className="requirement-text">Wymagane od kandydata:</p>
+            <p className="requirement-row">
+              <p className="arrow"> → </p>
+              <p className="requirement-text">Ukończone studia wyższe</p>
+            </p>
+            <p className="requirement-row">
+              <p className="arrow"> → </p>
+              <p className="requirement-text">Przygotowanie pedagogiczne</p>
             </p>
           </p>
         </div>

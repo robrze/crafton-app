@@ -1,4 +1,4 @@
-@import "../../assets/fonts/Muli/multi-fonts.scss";
+@import "../../assets/fonts/Muli/muli-fonts.scss";
 @import "../../assets/styles/colors.scss";
 
 .central-view {
@@ -6,19 +6,23 @@
   display: flex;
   justify-content: center;
 
+  &__first-section {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__title {
     margin: 0;
     height: 72px;
     font-size: 36px;
     line-height: 60px;
-    color: $navy-blue;
-    font-family: "Multi";
     font-weight: 800;
+    color: $black;
   }
 
   &__link {
     color: $blue;
-    
+
     &:hover {
       cursor: pointer;
     }
@@ -28,28 +32,25 @@
     margin-right: 88px;
     line-height: 32px;
     font-size: 18px;
+    font-weight: 400;
     width: 600px;
+    color: $dark-gray;
   }
 
-  &__requirement-row {
+  .requirement-row {
     display: flex;
     flex-direction: row;
     margin: 0;
   }
 
-  &__requirement-text {
+  .requirement-text {
     margin-bottom: 10px;
   }
 
-  &__arrow {
+  .arrow {
     margin-bottom: 10px;
     margin-right: 20px;
     color: $blue;
-  }
-
-  &__for-who-section {
-    display: flex;
-    flex-direction: row;
   }
 
   &__globe {

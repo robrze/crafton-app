@@ -4,8 +4,11 @@ import { Button } from "../button/button";
 export const Lead = () => (
   <div className="lead">
     <div className="lead__content">
-      <p className="lead__text">Będziesz uczyć się z ciekawością.</p>
-      <p className="lead__text lead__text--blue">Obiecujemy.</p>
+      <span className="lead__text">
+        Będziesz uczyć się z ciekawością. <br />
+        <span className="lead__text--blue">Obiecujemy.</span>
+      </span>
+      <br />
       <div className="lead__actions">
         <Button onClick={() => {}}>ZOBACZ WIĘCEJ</Button>
         <Button transparent onClick={() => {}}>
