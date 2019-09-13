@@ -1,0 +1,70 @@
+@import "../../assets/styles/colors.scss";
+
+.lead {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: url("../../assets/images/UW-background.png");
+  height: 834px;
+  position: relative;
+
+  &__text {
+    margin: 0;
+
+    &--blue {
+      color: #00b6dc;
+      line-height: 60px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-left: 206px;
+    height: 100%;
+    font-size: 40px;
+    font-weight: 200;
+    color: white;
+    z-index: 1;
+  }
+
+  &__actions {
+    flex-direction: row;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.navigation {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &__items {
+    display: flex;
+    flex: 1;
+    max-width: 637px;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration-line: none;
+    color: white;
+  }
+}
