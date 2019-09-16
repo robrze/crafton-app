@@ -3,10 +3,22 @@
 
 .central-view {
   padding: 215px 200px;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 
   &__first-section {
+    display: flex;
+  }
+
+  &__second-section {
+    display: flex;
+    position: relative;
+  }
+
+  &__third-section {
     display: flex;
   }
 
@@ -17,6 +29,10 @@
     line-height: 60px;
     font-weight: 800;
     color: $black;
+
+    &--second {
+      margin-left: 88px;
+    }
   }
 
   &__link {
@@ -33,6 +49,11 @@
     font-size: 18px;
     width: 600px;
     color: $dark-gray;
+
+    &--second {
+      margin-right: 0px;
+      margin-left: 88px;
+    }
   }
 
   .requirement-row {
@@ -50,11 +71,37 @@
     color: $blue;
   }
 
-  &__globe {
+  .rectangle-text {
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 22px;
+    font-weight: 800;
+    top: 5px;
+    left: 5px;
+    color: white;
+  }
+
+  &__image {
     width: 492px;
     height: 514px;
     box-shadow: 0px 11px 35px rgba(95, 95, 95, 0.22);
-    object-position: 0;
+    object-position: 0 70%;
     object-fit: none;
+
+    &--video {
+      object-position: 65% 35%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__blue-rectangle {
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 205px;
+    height: 205px;
   }
 }
