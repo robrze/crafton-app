@@ -1,13 +1,13 @@
 import React from "react";
 import handshake from "../../../assets/images/handshake.png";
-import blue_rectangle from "../../../assets/images/blue-rectangle.png";
+import blueRectangle from "../../../assets/images/blue-rectangle.png";
 
 export const SecondSection = () => (
   <div className="central-view__second-section">
     <img className="central-view__image" src={handshake} alt="handshake.png" />
     <img
       className="central-view__blue-rectangle"
-      src={blue_rectangle}
+      src={blueRectangle}
       alt="blue-rectangle.png"
     />
     <p className="rectangle-text">Nowość</p>

@@ -3,6 +3,7 @@ import "./central-page-view.scss";
 import { ThirdSection } from "./components/ThirdSection";
 import { SecondSection } from "./components/SecondSection";
 import { FirstSection } from "./components/FirstSection";
+import { ContactForm } from "./contact-form";
 
 export const CentralPageView = () => {
   return (
@@ -10,6 +11,7 @@ export const CentralPageView = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <ContactForm />
     </div>
   );
 };

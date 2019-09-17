@@ -11,7 +11,7 @@ export const Lead = () => (
       <br />
       <div>
         <Button onClick={() => {}}>ZOBACZ WIĘCEJ</Button>
-        <Button transparent onClick={() => {}}>
+        <Button type='transparent' onClick={() => {}}>
           UMÓW SIĘ Z ANIOŁEM
         </Button>
       </div>

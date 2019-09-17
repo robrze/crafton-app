@@ -5,7 +5,7 @@ export const FirstSection = () => (
   <div className="central-view__first-section">
     <div>
       <p className="central-view__title">Dla kogo?</p>
-      <p className="central-view__description">
+      <div className="central-view__description">
         Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy
         chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania
         kolejnego przedmiotu - Geografii.
@@ -21,16 +21,16 @@ export const FirstSection = () => (
         <span className="central-view__link">(Dz.U. 2017 poz. 1575)</span>.
         <br />
         <br />
-        <p className="requirement-text">Wymagane od kandydata:</p>
-        <p className="requirement-row">
+        <span className="requirement-text">Wymagane od kandydata:</span>
+        <div className="requirement-row">
           <p className="arrow"> → </p>
           <p className="requirement-text">Ukończone studia wyższe</p>
-        </p>
-        <p className="requirement-row">
+        </div>
+        <div className="requirement-row">
           <p className="arrow"> → </p>
           <p className="requirement-text">Przygotowanie pedagogiczne</p>
-        </p>
-      </p>
+        </div>
+      </div>
     </div>
     <img className="central-view__image" src={globe} alt="globe.png" />
   </div>

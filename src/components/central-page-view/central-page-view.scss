@@ -71,6 +71,18 @@
     color: $blue;
   }
 
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    &__message {
+      margin-left: 10px;
+      width: 528px;
+      font-size: 10px;
+    }
+  }
+
   .rectangle-text {
     position: absolute;
     transform: rotate(-45deg);
