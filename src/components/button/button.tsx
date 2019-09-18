@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 interface Props {
   children: ReactNode;
-  onClick: () => any;
+  onClick: (data: any) => any;
   type?: "transparent" | "blue";
 }
 

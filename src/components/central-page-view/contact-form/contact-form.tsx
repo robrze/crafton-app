@@ -4,7 +4,15 @@ import { TextareaComponent } from "../components/textarea/textarea";
 import { Form, Field, Formik } from "formik";
 import { Button } from "../../button/button";
 import { validateForm } from "../validators/form-validators";
+import axios from "axios";
 import "./contact-form.scss";
+
+const handleSubmit = (formData: any) => {
+  axios
+    .post("../../../index.php", formData)
+    .then(response => console.log(response))
+    .catch(error => console.warn(error));
+};
 
 export const ContactForm = () => (
   <div className="message-section">
@@ -13,7 +21,7 @@ export const ContactForm = () => (
 
     <Formik
       initialValues={{ name: "", surname: "", email: "", message: "" }}
-      onSubmit={values => alert(JSON.stringify(values, null, 2))}
+      onSubmit={handleSubmit}
       validate={validateForm}
     >
       {({ errors, touched }) => (
@@ -33,7 +41,6 @@ export const ContactForm = () => (
             component={InputComponent}
           />
           <Field
-            longer
             name="message"
             placeholder="Treść wiadomości"
             component={TextareaComponent}

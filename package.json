@@ -8,6 +8,7 @@
     "@types/node": "^12.7.4",
     "@types/ramda": "^0.26.21",
     "@types/react-dom": "^16.9.0",
+    "axios": "^0.19.0",
     "classnames": "^2.2.6",
     "eslint": "^6.3.0",
     "formik": "^1.5.8",
