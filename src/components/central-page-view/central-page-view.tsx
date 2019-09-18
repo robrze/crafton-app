@@ -4,7 +4,6 @@ import { ThirdSection } from "./third-section/third-section";
 import { SecondSection } from "./second-section/second-section";
 import { FirstSection } from "./first-section/first-section";
 import { ContactForm } from "./contact-form/contact-form";
-import { Footer } from "../footer/footer";
 
 export const CentralPageView = () => {
   return (
@@ -12,10 +11,7 @@ export const CentralPageView = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
-      <div>
-        <ContactForm />
-        <Footer />
-      </div>
+      <ContactForm />
     </div>
   );
 };
