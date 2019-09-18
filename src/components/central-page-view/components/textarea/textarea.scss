@@ -4,17 +4,17 @@
   display: flex;
   flex-direction: column;
 
-  &__input {
-    margin-bottom: 10px;
-    font-size: 20px;
-    width: 273px;
-    height: 56px;
-    padding-left: 10px;
-    font-size: 15px;
-    font-weight: 400;
-    transition: 0.3s all;
+  &__textarea {
+    box-sizing: border-box;
+    width: 580px;
     border: none;
     outline: none;
+    margin-bottom: 10px;
+    padding: 19px 10px;
+    transition: 0.3s all;
+    resize: none;
+    font-size: 15px;
+    font-weight: 400;
 
     &:focus, &:hover {
       box-shadow: 1px 3px 6px -5px $blue;
@@ -23,11 +23,6 @@
     &--error {
       border: 1px $red solid;
       color: $red;
-    }
-
-    &--longer {
-      box-sizing: border-box;
-      width: 580px;
     }
   }
 

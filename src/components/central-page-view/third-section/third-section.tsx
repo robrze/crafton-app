@@ -1,12 +1,13 @@
 import React from "react";
 import video from "../../../assets/images/video.png";
 import "./play-button.scss";
+import './third-section.scss';
 
 export const ThirdSection = () => (
-  <div className="central-view__third-section">
+  <div className="third-section">
     <div>
-      <p className="central-view__title">Z kim?</p>
-      <p className="central-view__description">
+      <p className="title">Z kim?</p>
+      <p className="description">
         Ciekawość jest najpotężniejszą cechą ludzką, która popycha ludzi do
         ciągłego rozwoju. CDV to miejsce, w którym studenci z zainteresowaniem i
         z przyjemnością zdobywają wiedzę. Zarówno studenci, absolwenci, jak i

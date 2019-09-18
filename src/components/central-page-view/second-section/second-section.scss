@@ -1,0 +1,23 @@
+.second-section {
+  display: flex;
+  position: relative;
+  margin: 215px 0px;
+}
+
+.rectangle-text {
+  position: absolute;
+  transform: rotate(-45deg);
+  font-size: 22px;
+  font-weight: 800;
+  top: 5px;
+  left: 5px;
+  color: white;
+}
+
+.blue-rectangle {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 205px;
+  height: 205px;
+}

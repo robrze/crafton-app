@@ -1,11 +1,12 @@
 import React from "react";
 import globe from "../../../assets/images/globe.png";
+import './first-section.scss';
 
 export const FirstSection = () => (
-  <div className="central-view__first-section">
+  <div className="first-section">
     <div>
-      <p className="central-view__title">Dla kogo?</p>
-      <div className="central-view__description">
+      <p className="title">Dla kogo?</p>
+      <div className="description">
         Dedykowane nauczycielom posiadającym przygotowanie pedagogiczne, którzy
         chcą uzyskać merytoryczne i metodyczne przygotowanie do nauczania
         kolejnego przedmiotu - Geografii.
@@ -18,7 +19,7 @@ export const FirstSection = () => (
         pedagogiczne, zgodnie z Rozporządzeniem Ministra Edukacji Narodowej z
         dnia 1 sierpnia 2017 r. w sprawie szczegółowych kwalifikacji wymaganych
         od nauczycieli{" "}
-        <span className="central-view__link">(Dz.U. 2017 poz. 1575)</span>.
+        <span className="link">(Dz.U. 2017 poz. 1575)</span>.
         <br />
         <br />
         <span className="requirement-text">Wymagane od kandydata:</span>

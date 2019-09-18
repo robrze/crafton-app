@@ -1,8 +1,9 @@
 import React from "react";
-import { InputComponent } from "./components/input/input";
+import { InputComponent } from "../components/input/input";
+import { TextareaComponent } from "../components/textarea/textarea";
 import { Form, Field, Formik } from "formik";
-import { Button } from "../button/button";
-import { validateForm } from "./validators/form-validators";
+import { Button } from "../../button/button";
+import { validateForm } from "../validators/form-validators";
 import "./contact-form.scss";
 
 export const ContactForm = () => (
@@ -35,11 +36,11 @@ export const ContactForm = () => (
             longer
             name="message"
             placeholder="Treść wiadomości"
-            component={InputComponent}
+            component={TextareaComponent}
           />
           <div className="checkbox">
-            <input type="checkbox" />
-            <span className="checkbox__message">
+            <input id="checkbox" type="checkbox" />
+            <label htmlFor="checkbox" className="checkbox__message">
               Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu
               ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych
               oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w
@@ -47,10 +48,12 @@ export const ContactForm = () => (
               podanie przeze mnie danych osobowych jest dobrowolne oraz iż
               zostałem poinformowany o prawie żądania dostępu do moich danych
               osobowych, ich zmiany oraz usunięcia.
-            </span>
+            </label>
           </div>
           <div className="form-row__button">
-            <Button type="blue" onClick={() => {}}>WYŚLIJ</Button>
+            <Button type="blue" onClick={() => {}}>
+              WYŚLIJ
+            </Button>
           </div>
         </Form>
       )}
