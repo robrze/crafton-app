@@ -1,4 +1,5 @@
 import React from "react";
+import { MapContainer } from "./Map";
 import "./footer.scss";
 
 interface LinksSectionProps {
@@ -61,12 +62,20 @@ const RenderLinksSection = () => (
 export const Footer = () => {
   return (
     <div className="footer">
-      <p className="footer__address">
-        ul. Głogowska 10 <br /><br/>
-        61-719 Poznań <br /><br/>
-        tel. 61 27 11 000
+      <div className="footer__address">
+        <p className="footer__address-text">
+          ul. Głogowska 10 <br />
+          <br />
+          61-719 Poznań <br />
+          <br />
+          tel. 61 27 11 000
+        </p>
+        <MapContainer />
+      </div>
+      <p className="footer__links-and-owners">
+        <RenderLinksSection />
+        <p className="owners">Projekt i realizacja: Crafton</p>
       </p>
-      <RenderLinksSection />
     </div>
   );
 };

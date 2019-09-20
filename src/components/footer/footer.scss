@@ -12,9 +12,22 @@
   box-sizing: border-box;
 
   &__address {
-    text-align: right;
+    margin-right: 90px;
+  }
+
+  &__address-text {
     font-size: 15px;
     line-height: 13px;
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+
+  &__links-and-owners {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   &__links {
@@ -22,10 +35,13 @@
     flex-direction: row;
     font-size: 15px;
     font-weight: 400;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
 .link {
+  text-decoration: none;
   color: white;
 }
 
@@ -33,5 +49,11 @@
   display: flex;
   flex-direction: column;
   line-height: 12px;
-  margin-right: 60px;
 }
+
+.map-container div:first-child {
+  position: relative !important;
+  height: 200px !important;
+  width: 200px !important;
+}
+
