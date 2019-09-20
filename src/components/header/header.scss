@@ -70,3 +70,21 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
+.bullets {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 100px;
+  justify-content: space-between;
+}
+
+.bullet {
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--yellow {
+    color: $yellow;
+  }
+}
