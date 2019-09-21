@@ -10,22 +10,22 @@ export const Navigation = () => (
           I stopnia
         </a>
       </li>
-      <li>
+      <li className="navigation__item">
         <a href="/" className="navigation__link">
           II stopnia
         </a>
       </li>
-      <li>
+      <li className="navigation__item">
         <a href="/" className="navigation__link">
           Podyplomowe
         </a>
       </li>
-      <li>
+      <li className="navigation__item">
         <a href="/" className="navigation__link">
           Szkolenia
         </a>
       </li>
-      <li>
+      <li className="navigation__item">
         <a href="/" className="navigation__link">
           Usługi
         </a>

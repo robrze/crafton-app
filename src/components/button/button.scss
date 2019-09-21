@@ -18,12 +18,20 @@
     border: 2px solid #f0f3f5;
     color: white;
     background: transparent;
+
+    &:hover {
+      background-color: rgba($navy-blue, 0.2);
+    }
   }
 
   &--blue {
     background-color: $blue;
     padding-right: 40px;
     color: white;
+
+    &:hover {
+      filter: brightness(110%);
+    }
   }
 
   &:focus {

@@ -3,10 +3,10 @@ import { Button } from "../button/button";
 
 const VerticalBullets = () => (
   <div className="bullets">
-    <span className="bullet">•</span>
-    <span className=" bullet bullet--yellow">•</span>
-    <span className="bullet">•</span>
-    <span className="bullet">•</span>
+    <div className="bullet">•</div>
+    <div className="bullet bullet--yellow">•</div>
+    <div className="bullet">•</div>
+    <div className="bullet">•</div>
   </div>
 );
 
