@@ -1,5 +1,5 @@
-import React from "react";
-import logo from "../../assets/icons/UW-bialy.png";
+import React from 'react';
+import logo from '../../assets/icons/UW-bialy.png';
 
 export const Navigation = () => (
   <nav className="navigation">

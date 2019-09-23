@@ -1,15 +1,15 @@
-import React from "react";
-import { Map, Marker, GoogleApiWrapper, GoogleAPI } from "google-maps-react";
-import LocationIcon from "../../assets/icons/location-icon.svg";
+import React from 'react';
+import { Map, Marker, GoogleApiWrapper, GoogleAPI } from 'google-maps-react';
+import LocationIcon from '../../assets/icons/location-icon.svg';
 
 interface MapProps {
   google: GoogleAPI;
 }
 
 const mapStyles = {
-  borderRadius: "50%",
-  width: "200px",
-  height: "200px",
+  borderRadius: '50%',
+  width: '200px',
+  height: '200px'
 };
 
 const _MapContainer = ({ google }: MapProps) => (
@@ -32,5 +32,5 @@ const _MapContainer = ({ google }: MapProps) => (
 );
 
 export const MapContainer = GoogleApiWrapper({
-  apiKey: "AIzaSyDP6ZhhJeNA_Ec-UtnXQdgxfFm7P4aOs70"
+  apiKey: 'AIzaSyDP6ZhhJeNA_Ec-UtnXQdgxfFm7P4aOs70'
 })(_MapContainer);

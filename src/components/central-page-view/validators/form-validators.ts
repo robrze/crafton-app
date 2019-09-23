@@ -5,7 +5,7 @@ import { FormValues, FormErrors, Errors } from './form-interfaces';
 
 enum ValidationMessages {
   REQUIRED = 'Pole wymagane',
-  INVALID_EMAIL_FORMAT = 'Nieprawidłowy adres email',
+  INVALID_EMAIL_FORMAT = 'Nieprawidłowy adres email'
 }
 
 export const validateForm: (obj: FormValues) => FormErrors = R.pipe<
@@ -22,5 +22,5 @@ export const validateForm: (obj: FormValues) => FormErrors = R.pipe<
   validateProp(R.isEmpty, 'email', ValidationMessages.REQUIRED),
   validateProp(isNotEmail, 'email', ValidationMessages.INVALID_EMAIL_FORMAT),
   validateProp(R.isEmpty, 'message', ValidationMessages.REQUIRED),
-  R.prop('errors'),
+  R.prop('errors')
 );

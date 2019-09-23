@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
-import "./input.scss";
-import { FieldProps, FormikTouched, FormikErrors } from "formik";
+import React, { ReactElement } from 'react';
+import './input.scss';
+import { FieldProps, FormikTouched, FormikErrors } from 'formik';
 
 interface Props {
   longer: boolean;
@@ -17,7 +17,7 @@ export const InputComponent = ({
   const errorMessage: string | FormikErrors<any> | undefined =
     errors[field.name];
 
-  const isLonger = longer ? "form-control__input--longer" : "";
+  const isLonger = longer ? 'form-control__input--longer' : '';
 
   return (
     <div className="form-control">

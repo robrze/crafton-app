@@ -1,6 +1,6 @@
-import React from "react";
-import { MapContainer } from "./Map";
-import "./footer.scss";
+import React from 'react';
+import { MapContainer } from './Map';
+import './footer.scss';
 
 interface LinksSectionProps {
   title: string;
@@ -9,34 +9,34 @@ interface LinksSectionProps {
 
 const linksSections: LinksSectionProps[] = [
   {
-    title: "O nas",
-    links: ["Dlaczego CDV", "Kadra naukowa", "Dla mediów", "Kontakt"]
+    title: 'O nas',
+    links: ['Dlaczego CDV', 'Kadra naukowa', 'Dla mediów', 'Kontakt']
   },
   {
-    title: "Dla kandydata",
+    title: 'Dla kandydata',
     links: [
-      "Poradnik maturzysty",
-      "Rekrutacja",
-      "Kredyt studencki",
-      "Studia dla cudzoziemców"
+      'Poradnik maturzysty',
+      'Rekrutacja',
+      'Kredyt studencki',
+      'Studia dla cudzoziemców'
     ]
   },
   {
-    title: "Dla studenta",
-    links: ["Wirtualna Uczelnia", "Stypendia", "Biuro Karier", "Studiuj dalej"]
+    title: 'Dla studenta',
+    links: ['Wirtualna Uczelnia', 'Stypendia', 'Biuro Karier', 'Studiuj dalej']
   },
   {
-    title: "Dla biznesu",
+    title: 'Dla biznesu',
     links: [
-      "Współpraca z biznesem",
-      "EmotionsLAB",
-      "Wynajem sal",
-      "Znajdź pracownika"
+      'Współpraca z biznesem',
+      'EmotionsLAB',
+      'Wynajem sal',
+      'Znajdź pracownika'
     ]
   },
   {
-    title: "Na skróty",
-    links: ["Aktualności", "Wydarzenia", "Konferencje", "Blog"]
+    title: 'Na skróty',
+    links: ['Aktualności', 'Wydarzenia', 'Konferencje', 'Blog']
   }
 ];
 
@@ -47,7 +47,7 @@ const RenderLinksSection = () => (
         {linksColumn.title}
         <div className="links-column">
           {linksColumn.links.map(link => (
-            <a href="/" className="link">
+            <a key={link} href="/" className="link">
               <br />
               <br />
               {link}

@@ -1,5 +1,5 @@
-import React from "react";
-import { FieldProps, FormikTouched, FormikErrors } from "formik";
+import React from 'react';
+import { FieldProps, FormikTouched, FormikErrors } from 'formik';
 import './textarea.scss';
 
 export const TextareaComponent = ({

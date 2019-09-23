@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 //@ts-ignore
-import ModalVideo from "react-modal-video";
-import "./play-button.scss";
-import "./third-section.scss";
+import ModalVideo from 'react-modal-video';
+import './play-button.scss';
+import './third-section.scss';
 
 export const ThirdSection = () => {
   const [videoOpen, setVideoOpen] = useState(false);
 
-  console.log("videoOpen: ", videoOpen);
+  console.log('videoOpen: ', videoOpen);
 
   return (
     <div className="third-section">

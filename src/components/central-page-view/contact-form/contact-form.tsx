@@ -1,15 +1,15 @@
-import React from "react";
-import { InputComponent } from "../components/input/input";
-import { TextareaComponent } from "../components/textarea/textarea";
-import { Form, Field, Formik } from "formik";
-import { Button } from "../../button/button";
-import { validateForm } from "../validators/form-validators";
-import axios from "axios";
-import "./contact-form.scss";
+import React from 'react';
+import { InputComponent } from '../components/input/input';
+import { TextareaComponent } from '../components/textarea/textarea';
+import { Form, Field, Formik } from 'formik';
+import { Button } from '../../button/button';
+import { validateForm } from '../validators/form-validators';
+import axios from 'axios';
+import './contact-form.scss';
 
 const handleSubmit = (formData: any) => {
   axios
-    .post("../../../index.php", formData)
+    .post('../../../index.php', formData)
     .then(response => console.log(response))
     .catch(error => console.warn(error));
 };
@@ -20,11 +20,11 @@ export const ContactForm = () => (
     <p className="form-proposal-text">Skorzystaj z formularza.</p>
 
     <Formik
-      initialValues={{ name: "", surname: "", email: "", message: "" }}
+      initialValues={{ name: '', surname: '', email: '', message: '' }}
       onSubmit={handleSubmit}
       validate={validateForm}
     >
-      {({ errors, touched }) => (
+      {() => (
         <Form>
           <div className="form-row">
             <Field name="name" placeholder="imię" component={InputComponent} />

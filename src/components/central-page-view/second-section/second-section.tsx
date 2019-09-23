@@ -1,6 +1,6 @@
-import React from "react";
-import handshake from "../../../assets/images/handshake.png";
-import blueRectangle from "../../../assets/images/blue-rectangle.png";
+import React from 'react';
+import handshake from '../../../assets/images/handshake.png';
+import blueRectangle from '../../../assets/images/blue-rectangle.png';
 import './second-section.scss';
 
 export const SecondSection = () => (

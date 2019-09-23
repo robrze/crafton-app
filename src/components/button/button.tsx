@@ -1,20 +1,20 @@
-import React, { ReactElement, ReactNode } from "react";
-import "./button.scss";
-import classNames from "classnames";
+import React, { ReactElement, ReactNode } from 'react';
+import './button.scss';
+import classNames from 'classnames';
 
 interface Props {
   children: ReactNode;
   onClick: (data: any) => any;
-  type?: "transparent" | "blue";
+  type?: 'transparent' | 'blue';
 }
 
 export const Button = ({ children, onClick, type }: Props): ReactElement => {
   const typeClass = classNames({
-    "button--transparent": type === "transparent",
-    "button--blue": type === "blue"
+    'button--transparent': type === 'transparent',
+    'button--blue': type === 'blue'
   });
 
-  const buttonClass = [typeClass, "button"].join(" ");
+  const buttonClass = [typeClass, 'button'].join(' ');
 
   return (
     <button className={buttonClass} onClick={onClick}>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "../button/button";
+import React from 'react';
+import { Button } from '../button/button';
 
 const VerticalBullets = () => (
   <div className="bullets">

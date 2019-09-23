@@ -5,7 +5,7 @@
   display: flex;
 }
 
-.link {
+.description-link {
   color: $blue;
 
   &:hover {
@@ -13,12 +13,16 @@
   }
 }
 
-.requirement-row {
-  display: flex;
+.requirements {
+  margin-top: 75px;
+
+  p {
+    margin-top: 0;
+  }
 }
 
-.requirement-text {
-  margin: 0px;
+.requirement-row {
+  display: flex;
 }
 
 .arrow {

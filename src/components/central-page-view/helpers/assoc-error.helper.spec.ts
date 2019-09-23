@@ -6,8 +6,8 @@ describe('assocError', () => {
       const result = assocError('password', 'is required')({});
       expect(result).toEqual({
         errors: {
-          password: 'is required',
-        },
+          password: 'is required'
+        }
       });
     });
   });
