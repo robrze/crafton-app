@@ -34,14 +34,15 @@
   }
 }
 
-.checkbox {
+.checkbox-row {
   display: flex;
-  flex-direction: row;
   margin-bottom: 30px;
+  width: 580px;
+  font-size: 10px;
+  line-height: 16px;
+  color: $black;
 
   &__message {
-    margin-left: 10px;
-    width: 528px;
-    font-size: 10px;
+    margin-left: 8px;
   }
 }
