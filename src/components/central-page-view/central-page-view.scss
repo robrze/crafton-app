@@ -2,11 +2,9 @@
 @import "../../assets/styles/colors.scss";
 
 .central-view {
-  padding: 0px 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
 
   .title {
     margin-top: 0px;
@@ -20,6 +18,12 @@
     &--second {
       margin-top: -15px;
       margin-left: 88px;
+
+      @media screen and (max-width: 1031px) {
+        & {
+          margin-left: 0;
+        }
+      }
     }
   }
 
@@ -49,6 +53,20 @@
       &:hover {
         cursor: pointer;
       }
+    }
+  }
+
+  @media screen and (max-width: 1175px) {
+    .first-section,
+    .second-section,
+    .third-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .description {
+      margin: 0;
     }
   }
 }

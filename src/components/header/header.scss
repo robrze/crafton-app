@@ -25,6 +25,13 @@
     font-weight: 200;
     color: white;
     z-index: 1;
+
+    @media screen and (max-width: 1031px) {
+      & {
+        padding-left: 0;
+        align-items: center;
+      }
+    }
   }
 
   &:after {

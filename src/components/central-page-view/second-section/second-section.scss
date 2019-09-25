@@ -4,6 +4,16 @@
   margin: 215px 0px;
 }
 
+.handshake-image {
+  position: relative;
+
+  @media screen and (max-width: 1031px) {
+    & {
+      margin-top: 60px;
+    }
+  }
+}
+
 .rectangle-text {
   position: absolute;
   transform: rotate(-45deg);

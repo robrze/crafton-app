@@ -1,5 +1,11 @@
-@import './assets/styles/colors.scss';
+@import "./assets/styles/colors.scss";
 
 .application {
   font-family: "Muli";
+
+  @media screen and (max-width: 1031px) {
+    & {
+      width: 1031px;
+    }
+  }
 }

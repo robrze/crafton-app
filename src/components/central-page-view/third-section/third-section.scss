@@ -1,7 +1,49 @@
-@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+@import "../../../assets/styles/colors.scss";
 
 .third-section {
-    display: flex;
-    width: 1180px;
-    margin-bottom: 215px;
+  display: flex;
+  width: 1180px;
+  margin-bottom: 215px;
+
+  @media screen and (max-width: 1031px) {
+    & {
+      width: 688px;
+    }
   }
+}
+
+.video-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.play-button {
+  width: 133px;
+  height: 133px;
+  background: rgba(96, 126, 133, 0.5);
+  background-size: 38px 43px;
+  position: absolute;
+  border-radius: 50%;
+  vertical-align: middle;
+    
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:before {
+    background: url("../../../assets/icons/iconfinder_play_134220.svg") no-repeat center;
+    background-size: 38px 43px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    display: block;
+    background-color: rgba(0, 182, 220, 0.5);
+    border-radius: 50%;
+    content: "";
+  }
+}

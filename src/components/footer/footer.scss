@@ -1,4 +1,4 @@
-@import '../../assets/styles/colors.scss';
+@import "../../assets/styles/colors.scss";
 
 .footer {
   display: flex;
@@ -57,3 +57,13 @@
   width: 200px !important;
 }
 
+@media screen and (max-width: 1031px) {
+  .footer {
+    padding: 90px 30px;
+    width: 100%;
+
+    &__address {
+      margin-right: 10px;
+    }
+  }
+}

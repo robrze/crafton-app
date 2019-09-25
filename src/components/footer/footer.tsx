@@ -72,10 +72,10 @@ export const Footer = () => {
         </p>
         <MapContainer />
       </div>
-      <p className="footer__links-and-owners">
+      <div className="footer__links-and-owners">
         <RenderLinksSection />
         <p className="owners">Projekt i realizacja: Crafton</p>
-      </p>
+      </div>
     </div>
   );
 };
